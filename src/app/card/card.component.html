@@ -1,0 +1,23 @@
+<div class="pricing col">
+    <div class="card mb-5">
+      <div class="card-body">
+        <h5 class="card-title text-muted text-uppercase text-center">{{item.name}}</h5>
+        <h6 class="card-price text-center">${{item.price}}<span class="period">/month</span></h6>
+        <hr>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>{{item.user}}</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>{{item.storage}}</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>{{item.projects}}</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>{{item.community}}</li>
+          <li [ngClass]="{'text-muted' : item.privateIcon === 'fa-solid fa-xmark'}"><span class="fa-li"><i class="fas {{item.privateIcon}}"></i></span>{{item.private}}</li>
+          <li [ngClass]="{'text-muted' : item.phoneIcon === 'fa-solid fa-xmark'}"><span class="fa-li"><i class="fas {{item.phoneIcon}}"></i></span>{{item.phone}}</li>
+          <li [ngClass]="{'text-muted' : item.subdomainIcon === 'fa-solid fa-xmark'}"><span class="fa-li"><i class="fas {{item.subdomainIcon}}"></i></span>{{item.subdomain}}
+          </li>
+          <li [ngClass]="{'text-muted' : item.monthlyIcon === 'fa-solid fa-xmark'}"><span class="fa-li"><i class="fas {{item.monthlyIcon}}"></i></span>{{item.monthly}}</li>
+        </ul>
+        <div class="d-grid">
+          <a href="#" class="btn btn-primary text-uppercase">Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
